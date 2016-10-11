@@ -1,0 +1,154 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet">
+
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+	<title>
+		Exercise 2 - Card
+	</title>
+	<style>
+
+		body {
+		  font-family: 'Noto Sans', sans-serif;
+		}
+
+		.card {
+			text-align: center;
+			width: 200px;
+			height: 350px;
+			border:1px solid #EEE;
+			margin: 50px auto;
+			background-color: #333;
+			font-size: 12px;
+			color: #CCC;
+		}
+
+		.logo {
+			padding: 30px 0 0;
+		}
+
+		.logo img {
+			vertical-align: middle;
+			width: 60px;
+			border-radius: 50%;
+			
+			position: relative;
+			top:-3px;
+		}
+
+		.content {
+			height: 100%;
+			position: relative;
+		}
+
+		.name {
+			color: #EEE;
+			font-size: 16px;
+			font-weight: 700;
+			padding: 5px 0 0;
+			line-height: 1.0em;
+		}
+
+		.contact {
+			padding: 20px 0;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+
+		}
+		.bio{
+				display: none;/* this hides the element */
+			}
+		@media screen and (min-width: 768px) {
+			.card{
+				transition: all 0.5s;
+				text-align: left;
+				width:700px;
+				height: 400px;
+				background-color: orange;
+				color:#000;
+			}
+			.name{
+				color:#000;
+				font-size: 28px;
+				font-weight: 700;
+			}
+			.text{
+				float: left;
+				padding:20px 5px;
+			}
+			.logo{
+				float: left;
+				padding:20px;
+			}
+			.contact{
+				font-size: 20px;
+				padding-left: 180px;
+				bottom:20px;
+				width: 50%;
+			}
+			
+		}
+
+		@media screen and (min-width: 1200px) {
+			.card{
+				transform: rotate(3deg);
+				background-color: #FFCD55;
+			}
+			.bio{
+				display: block; /*show the element */
+				float: right;
+				width: 25%;
+				font-style: italic;
+				padding: 10px;
+			}
+
+		}
+		
+		</style>
+</head>
+
+<body>
+
+	<div class="card">
+		<div class="content">
+			
+			<div class="logo">
+				<img src="a.jpg"/>
+			</div>
+
+			<div class="text">
+
+				<div class="name">Daiming Zhang</div>
+				<div class="title">Designer</div>
+
+			</div>
+
+			<div class="contact">
+				Daimingzhang@cca.com<br/>
+				510-640-4773<br/>
+				Oakland, CA
+			</div>
+			<div class="bio">
+			Typography is a tool of communication.
+			It must be communication in its most intense
+			form. The emphasis must be on absolute
+			clarity since this distinguishes the character 
+			of our own writing from that of ancient 
+			pictographic forms. Our intellectual
+			relationship to the world is individual-exact
+			(e.g.,this individual-exact relationship is 
+			in a state of transition toward a collective
+			-exact orientation). 
+			</div>
+			
+		</div>
+	</div>
+
+</body>
+</html>
