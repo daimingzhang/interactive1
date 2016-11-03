@@ -11,7 +11,7 @@
   </title>
   <style type="text/css">
 
-  body {
+  .whole{
   	background-color: #052744;
   		height:2800px;
   	width: 3250px;
@@ -19,7 +19,8 @@
   	background-repeat: no-repeat;
   	background-position: center;
   	margin-top: 300px;
-  	position: relative;
+  	position: absolute;
+  	}
   	
 
 
@@ -147,16 +148,13 @@
 		margin-left: -150PX;	
 		background-repeat: no-repeat;
 	}
-		.arrow{
+	.arrow{
 		position: absolute;
 	    width:  1000px;
 	    height: 1000px;
-	     
 	    margin-left: 760px;
 	    margin-top: 1820px;
-	    background-image: url("RARROW.png");
 	    animation: aarrow 24s infinite;
-	   	background-repeat: no-repeat;
 	}
 	.nav{text-align: center;
 		font-family: 'Anton', sans-serif;
@@ -274,12 +272,11 @@
 	}
 
 	@keyframes aarrow {
-		0%{
-			background-image: url('RARROW.png');
+		0%{background-image: url('RARROW.png');
 		}
 		16.5% {background-image: url('OARROW.png');
 		}
-		33%   {background-image: url('gARROW.png');
+		33% {background-image: url('GARROW.png');
 		}
 		49.5% {background-image: url('YARROW.png');
 		}
@@ -290,7 +287,7 @@
 			100% {background-image: url('RARROW.png');
 		}
 		
-	}
+		}
 
 
 
@@ -306,6 +303,7 @@
 
 
 <body>
+<div class="whole">
   
 <div class="box background">
 	
@@ -334,6 +332,7 @@
 	</div>
 		
 
+</div>
 </div>
 
 
