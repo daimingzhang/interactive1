@@ -1,0 +1,122 @@
+
+
+<!doctype html>
+
+
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <title>
+    In-Class Challenge 11/7
+  </title>
+  <style>
+
+
+    .quote {
+    	margin: 10%;
+    }
+
+
+    .quote p{
+    	font-size: 1.5em;
+    	line-height: 1.5em;
+    }
+    .switch{
+    	padding: 10px;
+    	cursor: pointer;
+    }
+    .red{
+    	color: red;
+    	background-color: yellow;
+    }
+    .waitt{
+    	text-decoration: underline;
+    	font-style: italic;
+    }
+    .quotee{
+    	color: black;
+    	background-color: black;
+    }
+    .noo{
+    	color:white;
+    }
+
+  </style>
+
+
+  <script>
+    $(document).ready(function() {
+    	$("#switch").click(function(){
+
+    		$(".anotherchance").toggleClass('red');
+    	});
+  
+    	$("#highlight").click(function(){
+
+    		$(".wait").toggleClass('waitt');
+    	});
+
+    	$("#no").click(function(){
+
+    		$(".quote").toggleClass('quotee');
+    		$(".no").toggleClass('noo')
+    	});
+
+
+    });
+    
+
+
+
+  </script>
+</head>
+
+
+<body>
+<button id="switch">Switch Color</button>
+
+<button id="highlight">waiting</button>
+
+<button id="no">no!</button>
+
+  <div class="quote">
+
+
+	<p>
+		<span class="wait">Waiting</span> for a train to go<br />
+		or a bus to come, or a plane to go<br />
+		or the mail to come, or the rain to go<br />
+		or the phone to ring, or the snow to snow<br />
+		or the <span class="wait">waiting</span> around for a Yes or No<br />
+		or <span class="wait">waiting </span>for their hair to grow.<br />
+		Everyone is just <span class="wait"></span>.<br />
+	</p>
+
+
+	<p>
+		<span class="wait">Waiting</span> for the fish to bite<br />
+		or <span class="wait">waiting </span>for the wind to fly a kite<br />
+		or <span class="wait">waiting</span> around for Friday night<br />
+		or <span class="wait">waiting</span>, perhaps, for their Uncle Jake<br />
+		or a pot to boil, or a Better Break<br />
+		or a string of pearls, or a pair of pants<br />
+		or a wig with curls, or <span class="anotherchance"> Another Chance.</span><br />
+		Everyone is just <span class="wait">waiting</span>.<br />
+	</p>
+
+
+	<p>
+		<span class="no">NO!</span><br />
+		That’s not for you!
+	</p>
+
+
+  </div>
+
+
+</body>
+</html>
+
+
+
+
