@@ -1,0 +1,104 @@
+<!doctype html>
+
+
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <title>
+  </title>
+  <style>
+
+   .box{
+   	height: 800px;
+   	background-position: center center;
+   	text-align: center;
+   	background-size: cover;
+   	padding: 25px;
+   }
+  .s1{
+  	background-image: url('view1.jpg');
+  }
+    .s2{
+  	background-image: url('view2.jpg');
+  }
+  .s3{
+  	background-image: url('view3.jpg');
+  }
+  .s4{
+  	background-image: url('view4.jpg');
+  }
+  .s5{
+  	background-image: url('view5.jpg');
+  }
+  	button{
+	padding: 5px;
+  	margin: 5px;
+  	font-size: 1.0em;
+  	cursor: pointer;
+  }
+  .nav{
+  			position: fixed;
+  		top:100px;
+  		left:0;
+  		background-color: #FFF;
+  		padding: 15px;
+  }
+  body{
+  	margin: 0px;
+  }
+
+
+
+
+
+  </style>
+
+
+
+  <script>
+   $(document).ready(function(){
+	$("#bu-b1").click(function(){
+	$("html, body").animate({
+	 scrollTop: $(".s1").offset().top
+			    }, 800);
+	});
+		$("#bu-b2").click(function(){
+	$("html, body").animate({
+	 scrollTop: $(".s2").offset().top
+			    }, 800);
+	});
+			$("#bu-b3").click(function(){
+	$("html, body").animate({
+	 scrollTop: $(".s3").offset().top
+			    }, 800);
+	});
+				$("#bu-b4").click(function(){
+	$("html, body").animate({
+	 scrollTop: $(".s4").offset().top
+			    }, 800);
+	});
+					$("#bu-b5").click(function(){
+	$("html, body").animate({
+	 scrollTop: $(".s5").offset().top
+			    }, 800);
+	});
+	});
+  
+  </script>
+</head>
+<body>
+	<div class="nav">
+	<button id="bu-b1">B1</button> 
+	<button id="bu-b2">B2</button>
+	<button id="bu-b3">B3</button>
+	<button id="bu-b4">B4</button>
+	<button id="bu-b5">B5</button>
+	</div>
+	<div class="box s1">view1</div>
+	<div class="box s2">view2</div>
+	<div class="box s3">view3</div>
+	<div class="box s4">view4</div>
+	<div class="box s5">view4</div>
+</body>
+</html>
+
