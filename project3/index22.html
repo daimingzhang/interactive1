@@ -1,0 +1,291 @@
+<!doctype html>
+
+
+<html lang="en">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Add jQuery library -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  <title>
+    <!-- add your title here -->
+  </title>
+  <style>
+  body {
+  	margin:0;
+  	background-color: white;
+  
+  }
+ 	 .daily{
+ 	 	background-image: url(steps.png);
+ 	 	width: 300px;
+  		height: 200px;
+  		background-repeat: no-repeat;
+
+ 	 }
+ 	 .bigcontainer{
+ 	    width: 10000px;
+    padding: 150px 0;
+        margin-top: 330px;
+ 	 }
+ 	 #step0{
+ 	 	background-image: url(p1.png);
+    display: block;
+    cursor: pointer;
+
+ 	 }
+ 	  #step20{
+ 	 	background-image: url(p2.png);
+     display: block;
+    cursor: pointer;
+ 	 }
+
+    #step40{
+    background-image: url(p3.png);
+
+   }
+     #step60{
+    background-image: url(p4.png);
+   }
+     #step80{
+    background-image: url(p5.png);
+   }
+     #step100{
+    background-image: url(p6.png);
+   }
+
+      #step120{
+    background-image: url(p7.png);
+   }
+
+   #step140{
+    background-image: url(p8.png);
+   }
+    #step160{
+    background-image: url(p9.png);
+   }
+    #step180{
+    background-image: url(p10.png);
+   }
+
+
+ 	 .grid{
+  	list-style:none;
+  	padding:0;
+  	margin:0;
+  	clear:both;
+  	width:100%;
+  	position: relative;
+  }
+  .circle{
+ 
+  	background-color: black;
+  	color:white;
+  	border-radius: 50%;
+  	width: 50px;
+  	height: 50px;
+  	text-align: center;
+  	line-height: 50px;
+  }
+
+  .grid li{
+  	float:left;
+ 	width: 250px;
+ 	height: 250px;
+  padding: 0px;
+  background-repeat: no-repeat;
+  }
+  .expand:hover{
+    transform: scale(1.2);
+
+  }
+  .expand:hover .circle {
+    background-color: red;
+  }
+  .mapcontainer{
+     background-image: url(xiaoditu.png);
+    width: 500px;
+    height: 490px;
+    position: fixed;
+    margin-left: 840px;
+       margin-top: -640px;
+    background-repeat: no-repeat;
+  }
+  .dot{
+       height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    top: 67%;
+    left: 40%;
+    animation: aaa 0.5s infinite;
+  }
+   @keyframes aaa{
+  from{opacity: 0;}
+  to{opacity: 0.8;}
+ }
+
+ .step20{
+ 	height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    top: 80%;
+    left: 50%;
+    animation: aaa 0.5s infinite;
+
+ }
+ .titile{
+    background-image: url(bian1.png);
+    height: 202px;
+    width: 305px;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-left: 550px;
+    position: fixed;
+
+ }
+ .titile:hover {
+  background-image: url(gohome1.png);
+  cursor: pointer;
+  background-repeat: no-repeat;
+ }
+  button {
+      font-size: 1.0em;
+      cursor: pointer;
+      float: left;
+      background-color: black;
+    color:white;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    }
+
+
+  </style>
+<script type="text/javascript">
+    $(document).ready(function() {
+
+      $(".fancybox").fancybox();
+
+      $("#step0").hover(function(){
+
+        $(".dot").css({top:'67%', left: '40%'});
+
+      });
+
+      $("#step20").hover(function(){
+
+        $(".dot").css({top:'59%', left: '40%'});
+
+      });
+
+    });
+
+    
+
+
+
+
+  
+
+
+   
+
+  </script>
+</head>
+
+
+<body>
+<a href="index.html"><div class="titile"></div></a>
+ <div class="bigcontainer">
+ 
+ 	<ul class="grid">
+ 	
+  <a class="fancybox" href="p1.png" rel="group" title="Let's start">
+   	<li id="step0" class="expand" class="ccc">
+   		<div class="circle">0</div>
+   	</li>
+  </a>
+
+<a class="fancybox" href="p2.png" rel="group" title="20 steps">
+ 	<li id="step20" class="expand" class="ccc">
+ 		<div class="circle">20</div>
+ 	</li>
+</a>
+
+<a class="fancybox" href="p3.png" rel="group" title="40 steps">
+  <li id="step40" class="expand">
+    <div class="circle">40</div>
+  </li>
+  </a>
+
+<a class="fancybox" href="p4.png" rel="group" title="60 steps">
+  <li id="step60" class="expand">
+    <div class="circle">60</div>
+  </li>
+</a>
+
+   
+<a class="fancybox" href="p5.png" rel="group" title="80 steps">
+  <li id="step80" class="expand">
+    <div class="circle">80</div>
+  </li>
+  </a>
+
+
+<a class="fancybox" href="p6.png" rel="group" title="100 steps">
+  <li id="step100" class="expand">
+    <div class="circle">100</div>
+  </li>
+  </a>
+
+
+<a class="fancybox" href="p7.png" rel="group" title="120 steps">
+  <li id="step120" class="expand">
+    <div class="circle">120</div>
+    </li>
+    </a>
+
+<a class="fancybox" href="p8.png" rel="group" title="140 steps">
+  <li id="step140" class="expand">
+    <div class="circle">140</div>
+    </li>
+    </a>
+
+ 
+<a class="fancybox" href="p9.png" rel="group" title="160 steps">
+  <li id="step160" class="expand">
+    <div class="circle">160</div>
+    </li>
+    </a>
+
+<a class="fancybox" href="p10.png" rel="group" title="180 steps">
+  <li id="step180" class="expand">
+    <div class="circle">180</div>
+
+    </li>
+</a>
+ 	</ul>
+  	</div>
+
+  	<div class="box mapcontainer">
+    <div class="dot"></div></div>
+
+
+
+
+
+
+ </div>
+
+
+</body>
+</html>
