@@ -18,7 +18,7 @@
   <style>
   body {
   	margin:0;
-  	background-color: white;
+    background-color:#58595b;
   
   }
  	 .daily{
@@ -70,6 +70,14 @@
     #step180{
     background-image: url(p10.png);
    }
+      #step200{
+    background-image: url(p11.png);
+   }
+
+   #step220{
+    background-image: url(p12.png);
+   }
+
 
 
  	 .grid{
@@ -107,12 +115,12 @@
   }
   .mapcontainer{
        float: left;
-    background-image: url(xiaoditu.png);
-    width: 500px;
-    height: 490px;
+    background-image: url(ditu222.png);
+      width: 620px;
+    height: 630px;
     position: fixed;
-    margin-left: 840px;
-        margin-top: 265px;
+     margin-left: 809px;
+    margin-top: 265px;
     background-repeat: no-repeat;
   }
   .dot{
@@ -147,11 +155,11 @@
     width: 305px;
     background-repeat: no-repeat;
     margin-top: 10px;
-    margin-left: 550px;
+         margin-left: 588px;
     position: fixed;
  }
   .titile:hover {
-  background-image: url(gohome1.png);
+  background-image: url(gohome.png);
   cursor: pointer;
   background-repeat: no-repeat;
  }
@@ -180,15 +188,26 @@
 
       $("#step0").hover(function(){
 
-        $(".dot").css({top:'67%', left: '40%'});
+        $(".dot").css({top:'86%', left: '46%'});
 
       });
 
       $("#step20").hover(function(){
 
-        $(".dot").css({top:'59%', left: '40%'});
+        $(".dot").css({top:'85%', left: '46%'});
 
       });
+        $("#step40").hover(function(){
+
+        $(".dot").css({top:'84%', left: '47%'});
+
+      });
+            $("#step60").hover(function(){
+
+        $(".dot").css({top:'83.8%', left: '47.2%'});
+
+      });
+
 
     });
 
@@ -272,9 +291,25 @@
 <a class="fancybox" href="p10.png" rel="group" title="180 steps">
   <li id="step180" class="expand">
     <div class="circle">180</div>
-
-    </li>
+</li>
 </a>
+
+<a class="fancybox" href="p11.png" rel="group" title="200 steps">
+  <li id="step200" class="expand">
+    <div class="circle">200</div>
+</li>
+</a>
+<a class="fancybox" href="p12.png" rel="group" title="220 steps">
+  <li id="step220" class="expand">
+    <div class="circle">220</div>
+</li>
+</a>
+<a class="fancybox" href="p13.png" rel="group" title="240 steps">
+  <li id="step240" class="expand">
+    <div class="circle">240</div>
+</li>
+</a>
+
  	</ul>
   	</div>
     <a href="index.html" class="tit"><div class="titile"></div></a>
