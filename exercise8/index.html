@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en" class>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen">
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  <title>
+    Exercise 8
+  </title>
+
+  <style>
+
+  	.fancybox-title {
+  		font-size:3.0em;
+  	}
+
+  .fancybox{    
+   height: 47px;
+    width: 243px;
+    float: left;
+
+  }
+  .container{
+  	float: left;
+  }
+
+  img#i2{
+  margin-top: 19px;
+  }
+
+  
+  img#i3{   
+       margin-top: 3px;
+    margin-left: 30px;
+
+  }
+  </style>
+
+  <script>
+		$(document).ready(function() {
+
+			$(".fancybox").fancybox({
+				nextEffect:'none',
+        prevEffect:'none'
+			});
+
+		});
+  </script>
+
+
+
+</head>
+<body>
+<div class="container"></div>
+  
+		<a class="fancybox" rel="mt_shasta" href="1.png" title="1">
+    <img src="4.png" />
+    </a>
+
+		<a class="fancybox" rel="mt_shasta" href="2.png" title="2" >
+		<img src="5.png" / id="i2">	
+		</a>
+
+		<a class="fancybox" rel="mt_shasta" href="3.png" title="3" >
+		<img src="6.png" / id="i3">	
+		</a>
+
+
+</body>
+
+</html>
